@@ -74,3 +74,7 @@ set laststatus=2
 
 " Show git info in airline
 let g:airline#extensions#hunks#enabled=0
+
+" Add Tagbar keybinding
+let g:tagbar_usearrows = 1
+nnoremap <F3> :TagbarToggle<CR>
