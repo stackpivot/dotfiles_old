@@ -25,3 +25,6 @@
 [submodule ".vim/manual"]
 	path = .vim/manual
 	url = https://github.com/shawncplus/vim-classes
+[submodule ".vim/bundle/gundo.vim"]
+	path = .vim/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim/

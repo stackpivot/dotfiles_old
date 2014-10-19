@@ -67,7 +67,7 @@ map <C-e> <esc>$a
 imap <C-a> <esc>$i
 
 " NerdTree Settings
-map <F2> :NERDTreeToggle<CR>
+map <F1> :NERDTreeToggle<CR>
 
 " enabling airline
 set laststatus=2
@@ -78,3 +78,6 @@ let g:airline#extensions#hunks#enabled=0
 " Add Tagbar keybinding
 let g:tagbar_usearrows = 1
 nnoremap <F3> :TagbarToggle<CR>
+
+" Toggle gundo
+nnoremap <F2> :GundoToggle<CR>
