@@ -20,7 +20,7 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+r exec "dmenu_run -b -nb \#3f3f3f -nf \#ecdccc -sf \#3f3f3f -sb \#ecdccc
+# bindsym $mod+r exec "dmenu_run -b -nb \#3f3f3f -nf \#ecdccc -sf \#3f3f3f -sb \#ecdccc
 
 # lock screen
 bindsym $mod+Ctrl+End exec "cat /home/cpyriot/.config/i3/lock.sh | sh"
@@ -197,6 +197,30 @@ bindsym $mod+F2 [con_mark="F2"] focus
 bindsym $mod+F3 [con_mark="F3"] focus
 bindsym $mod+F4 [con_mark="F4"] focus
 
+
+# setting solarized colorscheme vars
+
+# solarized accents
+set $yellow #b58900
+set $orange #cb4b16
+set $red #dc322f
+set $magenta #d33682
+set $violet #6c71c4
+set $blue #268bd2
+set $cyan #2aa198
+set $green #859900
+
+# solarized dark
+set $baseA3 #002b36
+set $baseA2 #073642
+set $baseA1 #586e75
+set $baseA0 #657b83
+set $baseB0 #839496
+set $baseB1 #93a1a1
+set $baseB2 #eee8d5
+set $baseB3 #fdf6e3
+set $custom #1c5766
+
 # colors
 # class             border  bg      text    indicator
 client.focused      #FF0000 #ecdccc #3f3f3f #B0363E
@@ -206,7 +230,6 @@ client.urgent       #ff0000 #900000 #ffffff #900000
 # wait 500ms before resetting the urgent hint
 force_display_urgency_hint 1000 ms
 
-#dc322f
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -214,15 +237,30 @@ bar {
         Modifier $mod
         status_command i3status -c ~/.config/i3/i3status.conf
         colors {
-            background #3f3f3f
-            statusline #ecdccc
-            focused_workspace #3f3f3f #ecdccc #000000
+
+                # status
+                 separator $blue
+                 background $baseA2
+                 statusline $baseB2
+                 ###################
+                 # solarized (clean)
+                 ###################
+                 # workclass border backgr. text
+                 focused_workspace $blue $blue $baseA3
+                 active_workspace $cyan $cyan $baseA2
+                 inactive_workspace $baseA2 $baseA2 $baseB1
+                 urgent_workspace $orange $orange $baseB3
+
+#            focused_workspace #3f3f3f #ecdccc #000000
 #            active_workspace #3f3f3f #3f3f3f #ecdccc
-            inactive_workspace #3f3f3f #3f3f3f #ecdccc
-            urgent_workspace #ff0000 #ff0000 #ffffff
+#            inactive_workspace #3f3f3f #3f3f3f #ecdccc
+#            urgent_workspace #ff0000 #ff0000 #ffffff
         }
 }
 
+
+# start dmenu (a program launcher)
+bindsym $mod+r exec "dmenu_run -b -nb \#073642 -nf \#ecdccc -sf \#3f4f3f -sb \#cb4b16
 
 
 

@@ -1,4 +1,4 @@
-:colorscheme zenburn
+:colorscheme solarized
 :set! browser.tabs.closeWindowWithLastTab=false
 
 " fixing scrolling

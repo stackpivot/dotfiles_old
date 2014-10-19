@@ -54,7 +54,7 @@ nnoremap <CR> :nohlsearch<CR><CR>
 noremap <F4> :set hlsearch! hlsearch?<CR>
 
 " filetype plugin indent on
-" filetype plugin on
+filetype plugin on
 
 " Switch between splits
 map <silent> <S-Right> <c-w>l
@@ -67,7 +67,7 @@ map <C-e> <esc>$a
 imap <C-a> <esc>$i
 
 " NerdTree Settings
-map <F1> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 
 
 " enabling airline
@@ -81,7 +81,7 @@ let g:tagbar_usearrows = 1
 nnoremap <F3> :TagbarToggle<CR>
 
 " Toggle gundo
-nnoremap <F2> :GundoToggle<CR>
+nnoremap <F1> :GundoToggle<CR>
 
 
 " keymapping to resize splits

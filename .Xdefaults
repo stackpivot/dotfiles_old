@@ -1,7 +1,7 @@
 # transparency - true or false (default)
 
 urxvt*transparent: false
-urxvt*shading: 99
+urxvt*shading: 15
 
 #urxvt*depth: 128
 #urxvt*background: rgba:0000/0000/0200/c800
