@@ -1,0 +1,16 @@
+:colorscheme zenburn
+:set! browser.tabs.closeWindowWithLastTab=false
+
+" fixing scrolling
+:map -b <down> 15j
+:map -b <up> 15k
+:map -b <k> 15k
+:map -b <j> 15j
+
+:map <C-c> <pass>
+:map <C-a> <pass>
+:map <C-u> <pass>
+:map <C-t> :set nst!=<A-Tab>
+
+:map <A-h> <A-l>
+:map <A-l> <A-r>
