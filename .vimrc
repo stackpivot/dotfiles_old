@@ -69,6 +69,7 @@ imap <C-a> <esc>$i
 " NerdTree Settings
 map <F1> :NERDTreeToggle<CR>
 
+
 " enabling airline
 set laststatus=2
 
@@ -81,3 +82,12 @@ nnoremap <F3> :TagbarToggle<CR>
 
 " Toggle gundo
 nnoremap <F2> :GundoToggle<CR>
+
+
+" keymapping to resize splits
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif
+
+
