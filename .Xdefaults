@@ -1,0 +1,127 @@
+# transparency - true or false (default)
+
+urxvt*transparent: false
+urxvt*shading: 99
+
+#urxvt*depth: 128
+#urxvt*background: rgba:0000/0000/0200/c800
+
+# tint with any color; i.e., blue, red, tomato4, olivedrab2, etc.
+#   some nice listings are at:
+#     http://www.nisrv.com/drupal/?q=node/11
+#     http://www.htmlgoodies.com/tutorials/colors/article.php/3478921
+#URxvt*tintColor: Blue
+
+# shading - 0 to 99 darkens, 101 to 200 lightens.
+#   Don't use with tintColor; just use a darker or lighter color instead.
+# URxvt*shading: 30
+
+# scrollback buffer lines - 65535 is max on most machines (64 is default)
+URxvt*saveLines: 65535
+
+# font color (default is black)
+
+# background color (prior to tinting) (default is white)
+
+# Xft (X FreeType) with Bitstream, DejaVu, Liberation, or Terminus fonts:
+#  Fedora/debian packages: libXft/libxft2
+#  An anti-aliased font setup with Xft looks fantastic; it can be a bit choppy
+#  on older systems. You can always turn off anti-aliasing (antialias=false) if
+#  your terminal is sluggish. Use only ONE of the Xft pairs below:
+#
+# Xft: Bitstream fonts
+#  Fedora/debian packages: bitstream-vera-sans-mono-fonts/ttf-bitstream-vera
+#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
+#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+#
+# Xft: DejaVu fonts
+#  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu
+URxvt*font: xft:Source Code Pro:pixelsize=9:antialias=true:hinting=true
+URxvt*boldFont: xft:Source Code Pro:bold:pixelsize=9:antialias=true:hinting=true
+#
+# Xft: Liberation fonts
+#  Fedora/debian packages: liberation-mono-fonts/ttf-liberation
+#URxvt*font: xft:Liberation Mono:pixelsize=10:antialias=true:hinting=true
+#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=10:antialias=true:hinting=true
+#
+# Xft: Terminus fonts
+#  Fedora/debian packages: terminus-fonts/xfonts-terminus
+#URxvt*font: xft:terminus:pixelsize=15
+#URxvt*boldFont: xft:terminus:bold:pixelsize=15
+
+# Traditional fonts - a more traditional font setup in lieu of xft
+#URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
+#URxvt*boldFont:-*-courier-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
+
+
+
+
+Urxvt*keysym.Control-Left:	\33[1;5D
+Urxvt*keysym.Control-Right:      \33[Oc
+
+
+! Fix font space
+#URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar: false
+
+! Perl extensions
+URxvt.perl-ext-common: default,matcher
+URxvt.matcher.button: 1
+URxvt.urlLauncher: firefox
+
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorColor: #657b83
+URxvt.cursorUnderline: false
+
+! Pointer
+URxvt.pointerBlank: true
+
+!!Source http://github.com/altercation/solarized
+
+*background: #002b36
+
+! setting background for light solarized
+#*background: #ffffd7
+
+*foreground: #657b83
+!!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+!! black dark/light
+*color0: #073642
+*color8: #002b36
+
+!! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+
+!! green dark/light
+*color2: #859900
+*color10: #586e75
+
+!! yellow dark/light
+*color3: #b58900
+*color11: #657b83
+
+!! blue dark/light
+*color4: #268bd2
+*color12: #839496
+
+!! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+
+!! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
+
+!! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
