@@ -71,3 +71,6 @@ map <F2> :NERDTreeToggle<CR>
 
 " enabling airline
 set laststatus=2
+
+" Show git info in airline
+let g:airline#extensions#hunks#enabled=0
