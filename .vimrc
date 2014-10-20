@@ -90,4 +90,4 @@ if bufwinnr(1)
   map - <C-W>-
 endif
 
-
+let g:airline_theme='solarized'
