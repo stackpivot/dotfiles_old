@@ -90,4 +90,12 @@ if bufwinnr(1)
   map - <C-W>-
 endif
 
-let g:airline_theme='solarized'
+" Configure Ailine
+let g:airline_theme = 'solarized'
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+let g:airline_powerline_fonts = 1
+
+" Configure gundo size
+let g:gundo_width = 30
+let g:gundo_preview_height = 28
+let g:gundo_help = 0

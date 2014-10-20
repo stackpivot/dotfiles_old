@@ -14,7 +14,7 @@ font pango:Sans 6.7
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec urxvtcd
 
 # kill focused window
 bindsym $mod+Shift+c kill
