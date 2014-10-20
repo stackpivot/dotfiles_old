@@ -55,6 +55,7 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 
 " filetype plugin indent on
 filetype plugin on
+filetype on
 
 " Switch between splits
 map <silent> <S-Right> <c-w>l
@@ -99,3 +100,6 @@ let g:airline_powerline_fonts = 1
 let g:gundo_width = 30
 let g:gundo_preview_height = 28
 let g:gundo_help = 0
+
+" configure syntastic to use python3
+let g:syntastic_python_python_exec = '/usr/bin/python3'
