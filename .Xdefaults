@@ -36,8 +36,8 @@ URxvt*saveLines: 65535
 #
 # Xft: DejaVu fonts
 #  Fedora/debian packages: dejavu-sans-mono-fonts/ttf-dejavu
-URxvt*font: xft:SourceCode Pro for Powerline:pixelsize=9:antialias=true:hinting=true
-URxvt*boldFont: xft:SourceCode Pro for Powerline:bold:pixelsize=9:antialias=true:hinting=true
+URxvt*font: xft:SourceCode Pro for Powerline:pixelsize=11:antialias=true:hinting=true
+URxvt*boldFont: xft:SourceCode Pro for Powerline:bold:pixelsize=11:antialias=true:hinting=true
 
 #
 # Xft: Liberation fonts
