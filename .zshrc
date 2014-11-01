@@ -98,6 +98,6 @@ alias cp="rsync -a"
 alias mountencfs="encfs ~/.encfs ~/encfs"
 alias umountencfs="fusermount -u ~/encfs"
 
-
+alias dmesg="dmesg -w"
 
 
