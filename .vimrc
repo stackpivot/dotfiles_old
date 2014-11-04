@@ -8,15 +8,15 @@ set background=dark
 execute pathogen#infect()
 
 " disable arrow keys
-no <down> <Nop>
-no <up> <Nop>
-no <left> <Nop>
-no <right> <Nop>
-
-ino <down> <Nop>
-ino <up> <Nop>
-ino <left> <Nop>
-ino <right> <Nop>
+"no <down> <Nop>
+"no <up> <Nop>
+"no <left> <Nop>
+"no <right> <Nop>
+"
+"ino <down> <Nop>
+"ino <up> <Nop>
+"ino <left> <Nop>
+"ino <right> <Nop>
 
 " Add line numbers
 set number
