@@ -18,7 +18,6 @@ ino <up> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
-
 " Add line numbers
 set number
 set cursorline
@@ -64,12 +63,12 @@ map <silent> <S-Up> <c-w>k
 map <silent> <S-Down> <c-w>j
 
 " jump in lines
-map <C-e> <esc>$a
-imap <C-a> <esc>$i
+"map <C-e> <esc>$a
+"imap <C-a> <esc>$^
 
 " NerdTree Settings
 map <F2> :NERDTreeToggle<CR>
-
+autocmd BufEnter * lcd %:p:h
 
 " enabling airline
 set laststatus=2
@@ -104,4 +103,5 @@ let g:gundo_help = 0
 " configure syntastic to use python3
 let g:syntastic_python_python_exec = '/usr/bin/python3'
 
-let g:airline_powerline_fonts = 1
+" Toggle Tastlist
+map <F5> <Plug>TaskList
