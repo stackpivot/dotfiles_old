@@ -72,9 +72,13 @@ autocmd BufEnter * lcd %:p:h
 
 " enabling airline
 set laststatus=2
-
+" show tabline
+let g:airline#extensions#tabline#enabled = 1
 " Show git info in airline
 let g:airline#extensions#hunks#enabled=0
+" set airline theme
+" let AirlineTheme base16
+
 
 " Add Tagbar keybinding
 let g:tagbar_usearrows = 1
