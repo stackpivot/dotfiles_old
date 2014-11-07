@@ -81,8 +81,8 @@ let g:airline#extensions#hunks#enabled=0
 
 
 " Add Tagbar keybinding
-let g:tagbar_usearrows = 1
 nnoremap <F3> :TagbarToggle<CR>
+let g:tagbar_usearrows = 1
 
 " Toggle gundo
 nnoremap <F1> :GundoToggle<CR>
