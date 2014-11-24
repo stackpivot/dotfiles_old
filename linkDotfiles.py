@@ -17,7 +17,6 @@ dotfiles = [
 ".zshrc",
 ]
 
-
 def checkForFileExistence(filepath):
     if filepath.split('/')[-1] in os.system("ls -la " + filepath):
         return True

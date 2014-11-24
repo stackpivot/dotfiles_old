@@ -12,6 +12,7 @@ ZSH_THEME="bira"
 bindkey '^[Od' backward-word
 bindkey '^[Oc' forward-word
 
+# xautolock -time 20 -locker lock
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

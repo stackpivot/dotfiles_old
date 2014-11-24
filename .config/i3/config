@@ -270,7 +270,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10
 
 
 # execute random wallpaper command
-exec --no-startup-id "cat /home/cpyriot/.xession | sh"
-exec --no-startup-id "feh --randomize --bg-fill ~/.wallpaper/*"
-exec --no-startup-id "i3-msg rename workspace to 1:term"
-exec --no-stratup-id "urxvtd"
+#exec --no-startup-id "cat /home/cpyriot/.xession | sh"
+#exec --no-startup-id "feh --randomize --bg-fill ~/.wallpaper/*"
+#exec --no-startup-id "i3-msg rename workspace to 1:term"
+#exec --no-stratup-id "urxvtd"
