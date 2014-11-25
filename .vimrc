@@ -86,6 +86,10 @@ let g:tagbar_usearrows = 1
 
 " Toggle gundo
 nnoremap <F1> :GundoToggle<CR>
+" Configure gundo size
+let g:gundo_width = 30
+let g:gundo_preview_height = 28
+let g:gundo_help = 0
 
 
 " keymapping to resize splits
@@ -98,11 +102,6 @@ endif
 let g:airline_theme = 'solarized'
 set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
-
-" Configure gundo size
-let g:gundo_width = 30
-let g:gundo_preview_height = 28
-let g:gundo_help = 0
 
 " configure syntastic to use python3
 let g:syntastic_python_python_exec = '/usr/bin/python3'

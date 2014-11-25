@@ -121,7 +121,7 @@ bindsym $mod+Shift+q reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
+bindsym §mod+F12 exec /home/jon/.config/i3/lock.sh
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -221,11 +221,24 @@ set $baseB2 #eee8d5
 set $baseB3 #fdf6e3
 set $custom #1c5766
 
+
+
+# $i3-background
+exec_always --no-startup-id xsetroot -solid '$baseA2'
+
+
 # colors
 # class             border  bg      text    indicator
-client.focused      #FF0000 #ecdccc #3f3f3f #B0363E
-client.unfocused    #0f0f0f #3f3f3f #ecdccc #030303
-client.urgent       #ff0000 #900000 #ffffff #900000
+#client.focused      #FF0000 #ecdccc #3f3f3f #B0363E
+#client.unfocused    #0f0f0f #3f3f3f #ecdccc #030303
+#client.urgent       #ff0000 #900000 #ffffff #900000
+client.focused $green $green $baseB3 $blue
+client.focused_inactive $cyan $cyan $baseB2 $violet
+client.unfocused $baseA2 $baseA2 $baseB1 $baseA1
+#client.urgent $orange $orange $baseB3 $red
+client.urgent $yellow $yellow $baseB3 $orange
+
+
 
 # wait 500ms before resetting the urgent hint
 force_display_urgency_hint 1000 ms
