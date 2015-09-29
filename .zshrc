@@ -5,8 +5,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
-# ZSH_THEME="agnoster"
+ZSH_THEME="sammy"
+#ZSH_THEME="agnoster"
 # DEFAULT=USER="cpyriot"
 
 bindkey '^[Od' backward-word
@@ -90,12 +90,10 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl"
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 alias halt="systemctl poweroff"
-alias subl="subl3"
 
-alias pattern_create="/usr/share/metasploit/tools/pattern_create.rb"
-alias pattern_offset="/usr/share/metasploit/tools/pattern_offset.rb"
-alias cp="rsync -a"
-
+alias pattern"python2 /home/jon/workspace/bin/createPattern.py"
+alias cp="rsync -avz"
+alias ßß="!!"
 alias mountencfs="encfs ~/.encfs ~/encfs"
 alias umountencfs="fusermount -u ~/encfs"
 
@@ -105,3 +103,8 @@ alias "gitl"="/usr/bin/git log --graph --abbrev-commit --decorate --format=forma
 #alias "gitl2"= log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 
 alias msfconsole="/usr/bin/msfconsole --quiet -x \"db_connect msf@msf\""
+
+alias rdesktopWin="rdesktop -u offsec -p xrBhFv7EpDz 192.168.11.65"
+alias subl="subl3"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

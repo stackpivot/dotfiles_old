@@ -249,6 +249,7 @@ force_display_urgency_hint 1000 ms
 bar {
         Modifier $mod
         status_command i3status -c ~/.config/i3/i3status.conf
+        mode hide
         colors {
 
                 # status
@@ -287,3 +288,4 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10
 #exec --no-startup-id "feh --randomize --bg-fill ~/.wallpaper/*"
 #exec --no-startup-id "i3-msg rename workspace to 1:term"
 #exec --no-stratup-id "urxvtd"
+exec --no-startup-id "xrdb -merge /home/jon/.Xresources"

@@ -2,7 +2,7 @@
 syntax on
 set t_Co=256
 colorscheme solarized
-set background=dark
+set background=light
 
 " Init pathogen
 execute pathogen#infect()
@@ -100,7 +100,7 @@ endif
 
 " Configure Ailine
 let g:airline_theme = 'solarized'
-set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 let g:airline_powerline_fonts = 1
 
 " configure syntastic to use python3
