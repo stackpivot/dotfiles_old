@@ -244,6 +244,11 @@ client.urgent $yellow $yellow $baseB3 $orange
 force_display_urgency_hint 1000 ms
 
 
+set $darkBackGround #1d1f21
+
+
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -253,22 +258,22 @@ bar {
         colors {
 
                 # status
-                 separator $blue
-                 background $baseA2
+                 separator #ecdccc
+                 background $darkBackGround
                  statusline $baseB2
                  ###################
                  # solarized (clean)
                  ###################
                  # workclass border backgr. text
-                 focused_workspace $blue $blue $baseA3
-                 active_workspace $cyan $cyan $baseA2
-                 inactive_workspace $baseA2 $baseA2 $baseB1
-                 urgent_workspace $orange $orange $baseB3
+                 #focused_workspace $blue $blue $baseA3
+                 #active_workspace $cyan $cyan $baseA2
+                 #inactive_workspace $baseA2 $baseA2 $baseB1
+                 #urgent_workspace $orange $orange $baseB3
 
-#            focused_workspace #3f3f3f #ecdccc #000000
-#            active_workspace #3f3f3f #3f3f3f #ecdccc
-#            inactive_workspace #3f3f3f #3f3f3f #ecdccc
-#            urgent_workspace #ff0000 #ff0000 #ffffff
+            focused_workspace #3f3f3f #ecdccc $darkBackGround
+            active_workspace #3f3f3f #3f3f3f #ecdccc
+            inactive_workspace #3f3f3f #3f3f3f #ecdccc
+            urgent_workspace #ff0000 #ff0000 #ffffff
         }
 }
 
