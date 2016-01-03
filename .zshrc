@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/home/jon/workspace/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -105,6 +105,13 @@ alias "gitl"="/usr/bin/git log --graph --abbrev-commit --decorate --format=forma
 alias msfconsole="/usr/bin/msfconsole --quiet -x \"db_connect msf@msf\""
 
 alias rdesktopWin="rdesktop -u offsec -p xrBhFv7EpDz 192.168.11.65"
-alias subl="subl3"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+alias gp="git push"
+alias gc="git commit -m"
+alias ga="git add ."
+
+
+export WINEARCH=win64
+alias ida="wine ~/workspace/sharedWithVMs/Hex-Rays\ IDA\ Pro\ v6\ 5\ READ\ NFO-DVT/%SystemDrive%/Program\ Files\ \(x86\)/IDA\ 6.5/idaq64.exe"

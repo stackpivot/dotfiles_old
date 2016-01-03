@@ -2,7 +2,7 @@
 syntax on
 set t_Co=256
 colorscheme solarized
-set background=light
+set background=dark
 
 " Init pathogen
 execute pathogen#infect()
